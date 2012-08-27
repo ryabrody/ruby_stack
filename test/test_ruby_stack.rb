@@ -37,4 +37,9 @@ class MyUnitTests < Test::Unit::TestCase
     stack = Container::Stack.new([1,2,3,4])
     assert_equal(stack.size, 4)
   end
+
+  def test_inspect
+    stack = Container::Stack.new([1,2,3,4])
+    assert_equal(stack.inspect, '[1, 2, 3, 4]')
+  end
 end

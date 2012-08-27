@@ -23,5 +23,9 @@ module Container
     def size
       @stack.size
     end
+
+    def inspect
+      @stack.inspect
+    end
   end
 end
