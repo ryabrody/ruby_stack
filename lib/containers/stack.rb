@@ -1,11 +1,11 @@
 module Container
   class Stack
     def initialize(stack)
-      stack = []
+      @stack = stack
     end
 
-    def push(value)
-      puts 'hello world'
+    def push(object)
+      @stack.push(object)
     end
   end
 end
