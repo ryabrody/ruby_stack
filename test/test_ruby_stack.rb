@@ -17,4 +17,9 @@ class MyUnitTests < Test::Unit::TestCase
     stack = Container::Stack.new([1,2,3,4])
     assert_equal(stack.pop, 'ERROR')
   end
+
+  def test_clear
+    stack = Container::Stack.new([1,2,3,4])
+    assert_equal(stack.clear, [])
+  end
 end

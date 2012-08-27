@@ -11,5 +11,9 @@ module Container
     def pop(obj = nil)
       obj.nil? ? 'ERROR' : @stack.pop(obj)
     end
+
+    def clear
+      @stack.clear
+    end
   end
 end
