@@ -9,7 +9,7 @@ module Container
     end
 
     def pop(obj = nil)
-      puts obj.nil? ? 'ERROR' : @stack.pop(obj)
+      obj.nil? ? 'ERROR' : @stack.pop(obj)
     end
   end
 end
