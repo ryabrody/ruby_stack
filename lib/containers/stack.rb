@@ -4,8 +4,12 @@ module Container
       @stack = stack
     end
 
-    def push(object)
-      @stack.push(object)
+    def push(obj)
+      @stack.push(obj)
+    end
+
+    def pop(obj = nil)
+      puts obj.nil? ? 'ERROR' : @stack.pop(obj)
     end
   end
 end
