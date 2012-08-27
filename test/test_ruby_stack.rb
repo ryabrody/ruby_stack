@@ -22,4 +22,9 @@ class MyUnitTests < Test::Unit::TestCase
     stack = Container::Stack.new([1,2,3,4])
     assert_equal(stack.clear, [])
   end
+
+  def test_size
+    stack = Container::Stack.new([1,2,3,4])
+    assert_equal(stack.size, 4)
+  end
 end

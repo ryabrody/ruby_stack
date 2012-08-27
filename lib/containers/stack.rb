@@ -15,5 +15,9 @@ module Container
     def clear
       @stack.clear
     end
+
+    def size
+      @stack.size
+    end
   end
 end
