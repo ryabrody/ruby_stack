@@ -23,6 +23,16 @@ class MyUnitTests < Test::Unit::TestCase
     assert_equal(stack.clear, [])
   end
 
+  def test_isempty_false
+    stack = Container::Stack.new([1,2,3,4])
+    assert_equal(stack.isempty?, false)
+  end
+
+  def test_isempty_true
+    stack = Container::Stack.new
+    assert_equal(stack.isempty?, true)
+  end
+
   def test_size
     stack = Container::Stack.new([1,2,3,4])
     assert_equal(stack.size, 4)

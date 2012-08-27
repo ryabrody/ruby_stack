@@ -1,6 +1,6 @@
 module Container
   class Stack
-    def initialize(stack)
+    def initialize(stack = [])
       @stack = stack
     end
 
@@ -14,6 +14,10 @@ module Container
 
     def clear
       @stack.clear
+    end
+
+    def isempty?
+      @stack.empty?
     end
 
     def size
