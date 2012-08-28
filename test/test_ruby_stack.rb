@@ -9,12 +9,12 @@ class MyUnitTests < Test::Unit::TestCase
   end
 
   def test_pop
-    stack = Container::Stack.new([1,2,3,4])
-    assert_equal(stack.pop(1), [4])
+    stack = Container::Stack.new([1,2,3,4,5])
+    assert_equal(stack.pop, 5)
   end
 
-  def test_pop_without_parameter
-    stack = Container::Stack.new([1,2,3,4])
+  def test_pop
+    stack = Container::Stack.new
     assert_equal(stack.pop, 'ERROR')
   end
 

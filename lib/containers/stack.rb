@@ -8,8 +8,8 @@ module Container
       @stack.push(obj)
     end
 
-    def pop(obj = nil)
-      obj.nil? ? 'ERROR' : @stack.pop(obj)
+    def pop
+      @stack.empty? ? 'ERROR' : @stack.pop
     end
 
     def clear
