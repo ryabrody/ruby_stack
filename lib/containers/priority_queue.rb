@@ -11,8 +11,8 @@ module Container
     end
 
     def pop_highest_priority_element
-      sort_queue
-      pop_highest(sort_queue).first
+      @queue = sort_queue
+      pop_highest.first
     end
 
     private
@@ -21,8 +21,8 @@ module Container
       @queue.sort_by { |name, position| -position }
     end
 
-    def pop_highest(queue)
-      queue.pop
+    def pop_highest
+      @queue.pop
     end
   end
 end
